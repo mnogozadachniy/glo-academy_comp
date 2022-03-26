@@ -1,0 +1,149 @@
+/** font-family: 'Roboto', sans-serif; **/
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: rgb(0,0,0);
+	background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 100%);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button, input {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 130rem;
+	margin: 0 auto;
+}
+
+.button {
+	border-radius: 5rem;
+	padding: 1rem 3rem;
+
+	font-size: 1.6rem;
+	color: inherit;
+}
+
+.header {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	width: 100%;
+	z-index: 10;
+
+	padding: 4rem 11rem 4rem 8rem;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.header__logo img {
+	width: 4rem;
+	height: 4rem;
+}
+
+.header__nav a {
+	font-size: 1.6rem;
+}
+
+.header__nav a:not(:last-child) {
+	margin-right: 7.1rem;
+}
+
+.header__button {
+	background: linear-gradient(95deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+	margin-left: 20rem;
+}
+
+.promo {
+	margin-top: 27rem;
+}
+
+.promo .container {
+	position: relative;
+	z-index: 10;
+}
+
+.promo__title {
+	font-size: 6.4rem;
+	font-weight: 700;
+	line-height: 140%;
+
+	width: 68rem;
+}
+
+.promo__timer {
+	display: flex;
+}
+
+.timer__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 10.2rem;
+	height: 11.2rem;
+	background: #121212;
+
+	margin-top: 5rem;
+}
+
+.timer__item:not(:last-child) {
+	margin-right: 3rem;
+}
+
+.timer__value {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+
+.timer__desc {
+	font-size: 1.6rem;
+	opacity: 0.4;
+}
+
+.promo__button {
+	background: linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%);
+	font-weight: 700;
+
+	margin-top: 7.6rem;
+}
+
+.promo__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}

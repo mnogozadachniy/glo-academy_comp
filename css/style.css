@@ -9,17 +9,20 @@
 
 @font-face {
 	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+		url('../fonts/Roboto-Medium.woff') format('woff');
+	font-weight: medium;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
 	src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
 		url('../fonts/Roboto-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
 }
 
 html,
@@ -30,6 +33,9 @@ body {
 	color: #FFFFFF;
 	background: rgb(0,0,0);
 	background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 100%);
+
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 img {
@@ -273,7 +279,116 @@ p {
 	padding-right: 1.8rem;
 }
 
+.staff {
+	padding-bottom: 20rem;
+}
 
+.staff__header {
+	display: flex;
+	align-items: center;
+
+	margin-left: -2rem;
+}
+
+.staff__icon img {
+	height: 12.7rem;
+	width: 12.7rem;
+	animation-name: rotation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.staff__title {
+	font-weight: 700;
+	font-size: 4.8rem;
+	line-height: 140%;
+}
+
+.staff__peoples {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 11rem;
+}
+
+.people__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.people__photo img {
+	height: 19rem;
+	width: 19rem;
+}
+
+.people__name {
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 140%;
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;
+}
+
+.people__desc {
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 160%;
+	opacity: 0.8;
+	padding-bottom: 3rem;
+}
+
+.people__bio {
+	font-size: 1.6rem;
+	line-height: 150%;
+	border: 1px solid #FFFFFF;
+	background-color: #050505;
+	text-align: center;
+}
+
+.footer {
+	padding-bottom: 20rem;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__header {
+	font-weight: 700;
+	font-size: 4.8rem;
+	line-height: 140%;
+	text-align: center;
+}
+
+.footer__desc {
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 160%;
+	opacity: 0.5;
+	padding-top: 3rem;
+}
+
+.footer__button {
+	background: linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%);
+	font-weight: 700;
+	margin-top: 4.1rem;
+	margin-bottom: 4.1rem;
+	max-width: 18.8rem;
+
+}
+
+.footer__vk, .footer__yt, .footer__fb, .footer__ig {
+	background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+	max-height: 5rem;
+	max-width: 5rem;
+	padding: 1.3rem;
+	margin: 0 1.5rem;
+}
+
+/** keyframes **/
 
 @keyframes rotation {
 	0% {

@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
@@ -34,8 +35,10 @@ body {
 	background: rgb(0,0,0);
 	background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 100%);
 
+	/*
 	max-width: 100%;
 	overflow-x: hidden;
+	*/
 }
 
 img {
@@ -87,7 +90,7 @@ p {
 	width: 100%;
 	z-index: 10;
 
-	padding: 4rem 11rem 4rem 8rem;
+
 
 	display: flex;
 	justify-content: space-between;
@@ -98,6 +101,9 @@ p {
 .header__logo img {
 	width: 4rem;
 	height: 4rem;
+	padding-left: 8rem;
+	padding-top: 4rem;
+	transform: translateY(-25%);
 }
 
 .header__nav a {
@@ -112,6 +118,7 @@ p {
 .header__button {
 	background: linear-gradient(95deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 	margin-left: 20rem;
+	margin-right: 11rem;
 }
 
 .promo {

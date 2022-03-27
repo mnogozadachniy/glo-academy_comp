@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Сборка игровых компьютеров на заказ</title>
@@ -18,14 +20,14 @@
 			</a>
 		</div>
 		<nav class="header__nav">
-			<a href="#">Чем занимаемся</a>
-			<a href="#">Процесс работы</a>
+			<a href="#about">Чем занимаемся</a>
+			<a href="#start">Процесс работы</a>
 			<a href="#">Команда</a>
 		</nav>
 		<button class="button header__button">Оставить заявку</button>
 	</header>
 	<main class="main">
-		<section class="promo">
+		<section class="promo" >
 			<div class="container">
 				<h1 class="promo__title">Собираем игровой ПК под ваш бюджет</h1>
 				<div class="timer promo__timer">
@@ -50,6 +52,46 @@
 			</div>
 			<div class="promo__background">
 				<img src="img/main-screen_background.jpg" alt="">
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about__img">
+					<img src="img/pc-2.png" alt="Мощный собранный компьютер твоей мечты">
+				</div>
+				<div class="about__text">
+					<h2>Чем мы занимаемся</h2>
+					<p>Помогаем сэкономить до 40% стоимости игрового компьютера без потери производительности. Подбираем мощные детали компьютера, заказываем у своих поставщиков или напрямую у производителей, чтобы сэкономить ваши деньги. Собираем мощный компьютер, на котором можно играть в любые современные игры и заниматься работой.</p>
+				</div>
+			</div>
+		</section>
+		<section class="start" id="start">
+			<div class="container">
+				<div class="start__header">
+					<div class="start__icon">
+						<img src="img/rotation-2.png" alt="">
+					</div>
+					<h2 class="start__title">Процесс работы</h2>
+				</div>
+				<p class="start__desc">Подробно рассказываем о том, как происходит сборка, от заявки до выдачи вашего заказа</p>
+				<div class="start__steps steps">
+					<div class="steps__item">
+						<h3 class="steps__title">Заявка</h3>
+						<p class="steps__desc">Мы получаем вашу заявку, связываемся с вами для уточнения деталей, чтобы понять ваши ожидания от будущего компьютера.</p>
+					</div>
+					<div class="steps__item">
+						<h3 class="steps__title">Подбор</h3>
+						<p class="steps__desc">После оплаты подбираем комплектующие, которые дадут максимальную производительность. Заказываем их напрямую у поставщиков.</p>
+					</div>
+					<div class="steps__item">
+						<h3 class="steps__title">Сборка</h3>
+						<p class="steps__desc">Собираем компьютер, проводим стартовую диагностику, устанавливаем операционную систему и необходимые драйверы для работы.</p>
+					</div>
+					<div class="steps__item">
+						<h3 class="steps__title">Выдача</h3>
+						<p class="steps__desc">Отдаём компьютер вам в назначенный срок, проводим вместе тестирование, подписываем документы о выполнении работы и гарантии.</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>

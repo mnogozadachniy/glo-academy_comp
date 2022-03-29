@@ -82,8 +82,10 @@ p {
 }
 
 .container {
-	width: 130rem;
+	width: 132rem;
 	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .button {
